@@ -1,58 +1,74 @@
-📌 Smart Attendance System
+### 📊 Report Generation
+- Automatic Excel report generation
+- Daily and overall attendance tracking
 
-A secure, automated attendance system using QR code + Face Recognition + Location Verification to eliminate proxy attendance and improve accuracy.
+---
 
-🚀 Features
-🔐 User Roles
-Admin
-Teacher
-Student
-📅 QR-Based Attendance
-Teacher generates QR (valid for 10 minutes)
-Students scan to mark attendance
-🧠 Face Recognition
-Matches with registered student image
-Prevents fake attendance
-📍 Location Verification
-Ensures student is inside classroom area
-🗂 Timetable Management
-Teachers upload & manage schedule
-📊 Auto Report Generation
-Daily attendance → Excel export
-🛠 Tech Stack
-Frontend: HTML, CSS, JavaScript
-Backend: Node.js / Python (Flask/Django)
-Database: MongoDB / SQL
-AI Model: CNN / Pre-trained Face Recognition (e.g., FaceNet / OpenCV)
-Hardware (optional): ESP32
-📂 Project Structure
+## 🛠 Tech Stack
+
+| Layer        | Technology |
+|-------------|-----------|
+| Frontend     | HTML, CSS, JavaScript |
+| Backend      | Node.js / Flask / Django |
+| Database     | MongoDB / MySQL |
+| AI Model     | FaceNet / OpenCV / Deep Learning |
+| Optional HW  | ESP32 |
+
+---
+
+## 📂 Project Structure
+
+
 attendance-system/
-│── backend/
-│── frontend/
-│── models/
-│── database/
-│── assets/
+│── backend/ # API and server logic
+│── frontend/ # UI code
+│── models/ # AI/ML models
+│── database/ # DB schema / config
+│── assets/ # Images / static files
 │── README.md
-⚙️ How It Works
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/your-username/attendance-system.git
+cd attendance-system
+2️⃣ Install Dependencies
+npm install
+# OR (Python)
+pip install -r requirements.txt
+3️⃣ Run Backend
+npm start
+# OR
+python app.py
+4️⃣ Open Frontend
+Open index.html
+OR run frontend server
+🔄 System Workflow
 Teacher logs in
-Generates QR for lecture
+Generates QR code
 Student scans QR
-System:
-Captures face
-Verifies location
-Matches with database
-Attendance marked & stored
+System captures:
+Face image
+Location
+AI verifies identity
+Attendance stored in database
 Excel report generated
-🔒 Security Features
-QR expiry (10 min)
-Face match validation
-GPS restriction
-Role-based authentication
-📈 Future Enhancements
-📱 Mobile App Integration
-☁️ Cloud Deployment
-📊 Analytics Dashboard
-🔔 Real-time Notifications
+🔒 Security Mechanisms
+⏱ QR expiration (10 minutes)
+🧠 Face recognition validation
+📍 Location restriction
+🔑 Secure login system
+📈 Future Scope
+Mobile app (Android/iOS)
+Cloud deployment (AWS/GCP)
+Real-time dashboard
+Biometric hardware integration
 👨‍💻 Author
 
 Yash Shastri
+Computer Engineering Student
+AI | IoT | Computer Vision
